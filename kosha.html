@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosha Gohil's Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E6E6FA; /* Lilac background */
+            text-align: center;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Title Styles */
+        h1 {
+            font-size: 3em;
+            color: #4B0082;
+            margin-top: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #4B0082;
+            margin-bottom: 20px;
+        }
+
+    
+       /* Container to hold all content */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            border: 2px solid #4B0082;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .container:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Banner Image Styling */
+        .banner-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            max-height: 600px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 4px solid #4B0082;
+        }
+
+        /* Navigation Tabs Styling */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .tabs a {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            background-color: #4B0082;
+            color: #fff;
+            margin: 5px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .tabs a:hover {
+            background-color: #3A0066;
+            border: 2px solid #fff;
+        }
+
+        /* Section Content */
+        .section {
+            display: none;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border: 2px solid #4B0082;
+        }
+
+        .active {
+            display: block;
+        }
+
+        /* Button Styles */
+        .download-btn {
+            display: inline-block;
+            padding: 18px 35px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4B0082;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid #4B0082;
+        }
+
+        .download-btn:hover {
+            background-color: #3A0066;
+            border: 2px solid #3A0066;
+        }
+
+        /* Social Links */
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            font-size: 1.5em;
+            margin: 0 20px;
+            text-decoration: none;
+            color: #4B0082;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #3A0066;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .tabs a {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .download-btn {
+                font-size: 1.1em;
+                padding: 15px 30px;
+            }
+
+            .social-links a {
+                font-size: 1.3em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .banner-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .tabs a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            .download-btn {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
+
+            .social-links a {
+                font-size: 1.1em;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <h1 id="title">Kosha Gohil's Portfolio</h1>
+
+        <!-- Banner Image -->
+        <img src="C:\Users\gohil\Desktop\WhatsApp Image 2024-09-19 at 13.52.49_8f0f0d09.jpg" alt="Banner Image" class="banner-image">
+
+        <h2><b>Cybersecurity Professional | Cloud Specialist | Passionate Educator</b></h2>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs">
+            <a href="javascript:void(0);" onclick="showSection('about')">About Me</a>
+            <a href="javascript:void(0);" onclick="showSection('contact')">Contact</a>
+            <a href="javascript:void(0);" onclick="showSection('resume')">Resume</a>
+            <a href="javascript:void(0);" onclick="showSection('work')">Work Experience</a>
+        </div>
+
+        <!-- About Me Section -->
+        <div id="about" class="section active">
+            <h2>About Me</h2>
+            <p> 𝘐 𝘢𝘮 𝘢 𝘥𝘦𝘥𝘪𝘤𝘢𝘵𝘦𝘥 𝘤𝘺𝘣𝘦𝘳𝘴𝘦𝘤𝘶𝘳𝘪𝘵𝘺 𝘱𝘳𝘰𝘧𝘦𝘴𝘴𝘪𝘰𝘯𝘢𝘭 𝘸𝘪𝘵𝘩 𝘢 𝘔𝘢𝘴𝘵𝘦𝘳’𝘴 𝘥𝘦𝘨𝘳𝘦𝘦 𝘪𝘯 𝘊𝘺𝘣𝘦𝘳𝘴𝘦𝘤𝘶𝘳𝘪𝘵𝘺, 𝘴𝘱𝘦𝘤𝘪𝘢𝘭𝘪𝘻𝘪𝘯𝘨 𝘪𝘯 𝘵𝘩𝘳𝘦𝘢𝘵 𝘥𝘦𝘵𝘦𝘤𝘵𝘪𝘰𝘯, 𝘳𝘪𝘴𝘬 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵, 𝘢𝘯𝘥 𝘤𝘭𝘰𝘶𝘥 𝘴𝘦𝘤𝘶𝘳𝘪𝘵𝘺. 𝘞𝘪𝘵𝘩 𝘤𝘦𝘳𝘵𝘪𝘧𝘪𝘤𝘢𝘵𝘪𝘰𝘯𝘴 𝘢𝘴 𝘢𝘯 𝘈𝘞𝘚 𝘊𝘦𝘳𝘵𝘪𝘧𝘪𝘦𝘥 𝘊𝘭𝘰𝘶𝘥 𝘗𝘳𝘢𝘤𝘵𝘪𝘵𝘪𝘰𝘯𝘦𝘳 𝘢𝘯𝘥 𝘊𝘪𝘴𝘤𝘰 𝘊𝘦𝘳𝘵𝘪𝘧𝘪𝘦𝘥 𝘕𝘦𝘵𝘸𝘰𝘳𝘬 𝘈𝘴𝘴𝘰𝘤𝘪𝘢𝘵𝘦 (𝘊𝘊𝘕𝘈), 𝘐 𝘣𝘳𝘪𝘯𝘨 𝘦𝘹𝘱𝘦𝘳𝘵𝘪𝘴𝘦 𝘪𝘯 𝘴𝘦𝘤𝘶𝘳𝘪𝘯𝘨 𝘴𝘺𝘴𝘵𝘦𝘮𝘴, 𝘮𝘢𝘯𝘢𝘨𝘪𝘯𝘨 𝘤𝘭𝘰𝘶𝘥 𝘪𝘯𝘧𝘳𝘢𝘴𝘵𝘳𝘶𝘤𝘵𝘶𝘳𝘦𝘴, 𝘢𝘯𝘥 𝘰𝘱𝘵𝘪𝘮𝘪𝘻𝘪𝘯𝘨 𝘯𝘦𝘵𝘸𝘰𝘳𝘬 𝘱𝘳𝘰𝘵𝘰𝘤𝘰𝘭𝘴. 𝘐 𝘢𝘮 𝘦𝘲𝘶𝘢𝘭𝘭𝘺 𝘱𝘢𝘴𝘴𝘪𝘰𝘯𝘢𝘵𝘦 𝘢𝘣𝘰𝘶𝘵 𝘦𝘥𝘶𝘤𝘢𝘵𝘪𝘰𝘯, 𝘸𝘪𝘵𝘩 𝘦𝘹𝘱𝘦𝘳𝘪𝘦𝘯𝘤𝘦 𝘢𝘴 𝘢 𝘱𝘳𝘰𝘨𝘳𝘢𝘮𝘮𝘪𝘯𝘨 𝘪𝘯𝘴𝘵𝘳𝘶𝘤𝘵𝘰𝘳 𝘢𝘯𝘥 𝘚𝘛𝘌𝘔 𝘵𝘶𝘵𝘰𝘳, 𝘸𝘩𝘦𝘳𝘦 𝘐 𝘴𝘪𝘮𝘱𝘭𝘪𝘧𝘺 𝘤𝘰𝘮𝘱𝘭𝘦𝘹 𝘤𝘰𝘯𝘤𝘦𝘱𝘵𝘴 𝘢𝘯𝘥 𝘮𝘢𝘬𝘦 𝘭𝘦𝘢𝘳𝘯𝘪𝘯𝘨 𝘦𝘯𝘨𝘢𝘨𝘪𝘯𝘨. 𝘋𝘳𝘪𝘷𝘦𝘯 𝘣𝘺 𝘪𝘯𝘯𝘰𝘷𝘢𝘵𝘪𝘰𝘯 𝘢𝘯𝘥 𝘤𝘰𝘯𝘵𝘪𝘯𝘶𝘰𝘶𝘴 𝘨𝘳𝘰𝘸𝘵𝘩, 𝘐 𝘴𝘦𝘦𝘬 𝘵𝘰 𝘤𝘳𝘦𝘢𝘵𝘦 𝘴𝘦𝘤𝘶𝘳𝘦, 𝘴𝘤𝘢𝘭𝘢𝘣𝘭𝘦 𝘴𝘰𝘭𝘶𝘵𝘪𝘰𝘯𝘴 𝘸𝘩𝘪𝘭𝘦 𝘦𝘮𝘱𝘰𝘸𝘦𝘳𝘪𝘯𝘨 𝘰𝘵𝘩𝘦𝘳𝘴 𝘵𝘩𝘳𝘰𝘶𝘨𝘩 𝘬𝘯𝘰𝘸𝘭𝘦𝘥𝘨𝘦 𝘴𝘩𝘢𝘳𝘪𝘯𝘨.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <h2 style="text-align: left; font-size: 20px; font-family:cursive;">Contact Me</h2>
+            <p style="font-family:cursive; text-align: left; "><b>Email: gohilkosha@gmail.com</b></p>
+            <p style="font-family:cursive; text-align: left; "><b>Phone: +1 551-330-1256</b></p>
+        </div>
+
+        <!-- Resume Section -->
+        <div id="resume" class="section">
+            <h2>My Resume</h2>
+            <p>You can download my resume here:</p>
+            <a href="https://github.com/kosha1924/RESUME-KOSHAGOHIL/blob/main/Kosha_Gohil-Resume.pdf" class="download-btn" target="_blank" download="Resume.pdf">Download My Resume</a>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div id="work" class="section">
+            <h2 style="font-size: 40px;">Work Experience</h2>
+        <ul>
+                <b style="text-align: left; font-size: 20px; font-family:cursive;"><i>Associate Cyber Security and QA | Filmy AI LLC. | New Jersey, United States | October 2024 -Present</i></b><br>
+
+                    <li style="text-align: justify; font-family:cursive;">Strengthened organizational security posture by implementing advanced threat detection and monitoring solutions using tools like Splunk, LogRhythm, and Snort, leading to reduction in security breaches.</li>
+                    <li style="text-align: justify; font-family:cursive;"> Strengthened network security through firewall configurations, intrusion detection systems, and proactive vulnerability assessments using tools like Nmap, Wireshark, and Burp Suite, achieving reduction in vulnerabilities.</li>
+                    <li style="text-align: justify; font-family:cursive;"> Improved data protection mechanisms by leveraging AWS Key Management Service (KMS) and AWS Certificate Manager (ACM) to ensure secure encryption and data integrity.</li>
+                    <li style="text-align: justify; font-family:cursive;">Designed real-time monitoring dashboards using Splunk to provide comprehensive insights into system health, user activity, and potential risks, enhancing operational transparency and efficiency</li>
+                
+           <br>     
+
+        </ul>
+        <ul>
+            <b style="text-align: left; font-size: 20px;  font-family:cursive;"><i>Data and IT Security Analyst | Exchange IT | New York, United States August 2024 - October 2024</i></b><br>
+
+                <li style="text-align: justify; font-family:cursive;">Automated data pipelines using Python, SQL, Pandas, NumPy, and scikit-learn to preprocess, clean, and analyze data.</li>
+                <li style="text-align: justify; font-family:cursive;">Collaborated with cross-functional teams to design and deploy scalable data solutions, enhancing team productivity by 25%.</li>
+                <li style="text-align: justify; font-family:cursive;">Utilized advanced statistical methods and machine learning algorithms to analyze large datasets, applying techniques such as regression analysis, clustering, and time series forecasting to identify patterns and uncover trends.</li>
+                <li style="text-align: justify; font-family:cursive;">Enhanced product quality by creating data visualizations on Tableau to assist stakeholders, while demonstrating self-motivated leadership by driving performance through KPI tracking and fostering continuous improvement in a dynamic environment.</li>
+                <li style="text-align: justify; font-family:cursive;">Designed the UI/UX for the company website using qualitative and quantitative data, ensuring an intuitive userexperience through comprehensive usability testing.</li>
+                 
+       <br>     
+       </ul>
+       <ul>
+        <b style="text-align: left; font-size: 20px;  font-family:cursive;"><i>Systems Engineer | Skyline Builders and Developers | Pune, India June 2020 - August 2022</i></b><br>
+
+            <li style="text-align: justify; font-family:cursive;">Administered and optimized 50+ Linux/Windows servers and cloud infrastructure (AWS, Azure), improving system
+                uptime by 25% through proactive monitoring and performance tuning</li>
+            <li style="text-align: justify; font-family:cursive;">Provided technical support to employees utilizing Apple devices, including troubleshooting software issues, assisting with device setup and configuration, and resolving hardware malfunctions</li>
+            <li style="text-align: justify; font-family:cursive;">Automated system maintenance and patch management processes, reducing manual intervention by 30%,
+                enhancing operational efficiency.</li>
+            <li style="text-align: justify; font-family:cursive;">Secured network infrastructure, including firewall configurations and VPN setups, reducing vulnerabilities by 20% and ensuring compliance with security protocols. Led the deployment of enterprise software solutions for cross-functional
+                teams, improving system integration and performance, resulting in a 15% increase in team productivity</li>
+             
+   <br>     
+   </ul>
+
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <h2>Find Me Online</h2>
+            <a href="www.linkedin.com/in/kosha-gohil" target="_blank">LinkedIn</a>
+            <a href="https://github.com/kosha1924" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <!-- Script to Switch Sections -->
+    <script>
+        function showSection(section) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(function(sec) {
+                sec.classList.remove('active');
+            });
+            // Show the selected section
+            const activeSection = document.getElementById(section);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
